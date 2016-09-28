@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff333333"
+    android:orientation="vertical" >
+
+
+
+    <EditText
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:textColor="#fff"
+        android:inputType="none"/>
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4" >
+
+
+        <Button
+            android:id="@+id/image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片" />
+
+
+        <Button
+            android:id="@+id/url_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="链接" />
+
+
+        <Button
+            android:id="@+id/color_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色1" />
+
+
+        <Button
+            android:id="@+id/color_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色2" />
+
+
+        <Button
+            android:id="@+id/font_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字体" />
+
+
+        <Button
+            android:id="@+id/style_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="样式" />
+
+
+        <Button
+            android:id="@+id/strike_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除线" />
+
+
+        <Button
+            android:id="@+id/underline_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下划线" />
+    </GridLayout>
+
+
+</LinearLayout>
+

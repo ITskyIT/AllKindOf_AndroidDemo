@@ -40,7 +40,7 @@ public class MainActivity extends BaseActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         data.add("spannablestring");
         data.add("Retrofit_RxAndroid");
-        data.add("1");
+        data.add("Android与JS交互");
         data.add("1");
         data.add("1");
         data.add("1");
@@ -56,6 +56,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 1:
                         startActivity(new Intent(MainActivity.this,Retrofit_RxAndroidActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(MainActivity.this,WebViewJSActivity.class));
                         break;
                 }
             }

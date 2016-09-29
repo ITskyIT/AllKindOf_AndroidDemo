@@ -55,7 +55,9 @@ public class WebViewJSActivity extends BaseActivity {
         settings.setDisplayZoomControls(false);
         settings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         settings.setMinimumFontSize(14);
-       /**           核心                        */
+        settings.setAppCacheEnabled(true);// 设置启动缓存
+        settings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+        /**           核心                        */
        webView.loadUrl("file:///android_asset/js.html");
         //js调用Android
         webView.addJavascriptInterface(new JavaInterface(),"jiazai");//第一个参数obj对象中实现JS调用android的实现的方法，

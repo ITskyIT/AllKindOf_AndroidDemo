@@ -41,7 +41,7 @@ public class MainActivity extends BaseActivity {
         data.add("spannablestring");
         data.add("Retrofit_RxAndroid");
         data.add("Android与JS交互");
-        data.add("1");
+        data.add("AndroidDesign设计");
         data.add("1");
         data.add("1");
         data.add("1");
@@ -59,6 +59,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 2:
                         startActivity(new Intent(MainActivity.this,WebViewJSActivity.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(MainActivity.this,DesignActivity.class));
                         break;
                 }
             }

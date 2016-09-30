@@ -22,10 +22,14 @@
         </activity>
         <activity android:name=".ui.activity.WebViewJSActivity">
         </activity>
-        <activity android:name=".ui.activity.DesignActivity"
-            android:theme="@style/AppTheme.NoActionBar"
+        <activity
+            android:name=".ui.activity.DesignActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".ui.activity.OpenCloseActivity"
                   android:screenOrientation="portrait"
-            >
+                  android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

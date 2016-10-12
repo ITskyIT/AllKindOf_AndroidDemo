@@ -42,8 +42,8 @@ public class MainActivity extends BaseActivity {
         data.add("Retrofit_RxAndroid");
         data.add("Android与JS交互");
         data.add("AndroidDesign设计");
-        data.add("1");
-        data.add("1");
+        data.add("进度条");
+        data.add("一些好看的View");
         data.add("1");
         adapter=new MainAdapter(this,data);
         recyclerView.setAdapter(adapter);
@@ -62,6 +62,12 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 3:
                         startActivity(new Intent(MainActivity.this,DesignActivity.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(MainActivity.this,ProgressBarActivity.class));
+                        break;
+                    case 5:
+                        startActivity(new Intent(MainActivity.this,CustomViewActivity.class));
                         break;
                 }
             }

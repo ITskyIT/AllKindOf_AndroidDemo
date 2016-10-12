@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tian.app.daydaystudy.ui.activity.CustomViewActivity">
+  <!--  <com.tian.app.daydaystudy.view.CornerLabelView
+        android:id="@+id/sdd"
+        style="@style/CornerLabelView.Default"
+        android:layout_gravity="bottom|right"
+        app:clvFillColor="#009688"
+        app:clvFlags="triangle|right|bottom"
+        app:clvPaddingCenter="10dp"
+        app:clvText1="五四三二"
+        android:background="@mipmap/gril"
+        />-->
+   <!-- <com.tian.app.daydaystudy.view.CornerLabelView
+  app:clvPaddingTop="50dp"
+  app:clvPaddingCenter="10dp"
+  app:clvPaddingBottom="5dp"
+        android:layout_width="200dp"
+        android:id="@+id/sdd"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|right"
+        app:clvFillColor="#795548"
+        app:clvFlags="right|bottom"
+        android:layout_margin="15dp"
+        app:clvText1="Android"/>-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:background="#CCC">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/gril"/>
+    <com.tian.app.daydaystudy.view.CornerLabelView
+        android:id="@+id/sdd"
+        style="@style/CornerLabelView.Default"
+        android:layout_gravity="bottom|right"
+        app:clvFillColor="#795548"
+        app:clvFlags="right|bottom"
+        app:clvText1="五四三二"/>
+    </FrameLayout>
+</RelativeLayout>

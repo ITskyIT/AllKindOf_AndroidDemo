@@ -27,9 +27,16 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ui.activity.OpenCloseActivity"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".ui.activity.OpenCloseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".ui.activity.ProgressBarActivity">
+        </activity>
+        <activity android:name=".ui.activity.PolygonsviewActivity">
+        </activity>
+        <activity android:name=".ui.activity.CustomViewActivity">
         </activity>
     </application>
 

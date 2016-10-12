@@ -11,9 +11,6 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <!--去除阴影线-->
-        <item name="elevation">0dp</item>
-        <item name="android:windowContentOverlay">@null</item>
     </style>
 
 

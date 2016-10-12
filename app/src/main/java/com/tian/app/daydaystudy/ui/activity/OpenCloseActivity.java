@@ -34,6 +34,7 @@ public class OpenCloseActivity extends BaseActivity {
         CollapsingToolbarLayout collapsingToolbar =
                 (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbar.setTitle("CollapsingToolbarLayout");
+        collapsingToolbar.setCollapsedTitleTextColor(getResources().getColor(R.color.colorAccent));
         RecyclerView mRecyclerView= (RecyclerView) findViewById(R.id.open_rv);
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL));
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());

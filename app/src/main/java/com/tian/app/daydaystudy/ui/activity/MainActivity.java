@@ -44,7 +44,7 @@ public class MainActivity extends BaseActivity {
         data.add("AndroidDesign设计");
         data.add("进度条");
         data.add("一些好看的View");
-        data.add("1");
+        data.add("photoView");
         adapter=new MainAdapter(this,data);
         recyclerView.setAdapter(adapter);
         adapter.setmListener(new MainAdapter.mainOnItemClickListener() {
@@ -68,6 +68,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 5:
                         startActivity(new Intent(MainActivity.this,CustomViewActivity.class));
+                        break;
+                    case 6:
+                        startActivity(new Intent(MainActivity.this,PhotoViewActivity.class));
                         break;
                 }
             }

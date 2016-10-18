@@ -38,4 +38,5 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.2.1'
     //下拉刷新上拉加载
     compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+    compile 'com.commit451:PhotoView:1.2.4'//图片缩放
 }

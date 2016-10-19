@@ -5,7 +5,7 @@
                 android:id="@+id/background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
+                android:fitsSystemWindows="true"
                 android:background="#FF000000">
 
     <com.tian.app.daydaystudy.view.PullBackLayout
@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        >
 
         <uk.co.senab.photoview.PhotoView
             android:id="@+id/photo_touch_iv"
@@ -21,7 +22,6 @@
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:layout_gravity="center"
-            android:fitsSystemWindows="true"
              />
         <!--使用PhotoView，共享动画不平滑-->
     </com.tian.app.daydaystudy.view.PullBackLayout>
@@ -32,7 +32,6 @@
         android:layout_height="wrap_content"
         android:alpha="0"
         android:background="@drawable/bg_toolbar_shade"
-        android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay"
         app:navigationIcon="@mipmap/ic_arrow_back"
         app:title="photo"

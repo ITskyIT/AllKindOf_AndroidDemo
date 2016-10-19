@@ -31,6 +31,7 @@ public class DesignActivity extends BaseActivity implements NavigationView.OnNav
     TabLayout tabLayout;
     @ViewInject(R.id.navi_view)
     NavigationView navigationView;
+
     private MyFragmentAdapter adapter;
     @Override
     protected void init() {
@@ -62,7 +63,7 @@ public class DesignActivity extends BaseActivity implements NavigationView.OnNav
         }
     }
 
-    @Event(value = {R.id.fab})
+    @Event(value = {R.id.fab,R.id.add_channel_iv})
     private void desginOnClick(View v){
         switch (v.getId()){
             case R.id.fab:
@@ -75,6 +76,9 @@ public class DesignActivity extends BaseActivity implements NavigationView.OnNav
                                 mToast.showToast("66哒☺");
                             }
                         }).show();
+                break;
+            case R.id.add_channel_iv:
+                ChannelActivity.startAction(this);
                 break;
         }
 

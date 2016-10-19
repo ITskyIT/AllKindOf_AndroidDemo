@@ -38,9 +38,12 @@
         </activity>
         <activity android:name=".ui.activity.CustomViewActivity">
         </activity>
-        <activity android:name=".ui.activity.PhotoViewActivity"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/AppTheme.NoActionBar.Trans">
+        <activity
+            android:name=".ui.activity.PhotoViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Trans">
+        </activity>
+        <activity android:name=".ui.activity.ChannelActivity">
         </activity>
     </application>
 

@@ -13,6 +13,7 @@ import com.tian.app.daydaystudy.R;
 import com.tian.app.daydaystudy.util.MyUtils;
 import com.tian.app.daydaystudy.util.SystemUiVisibilityUtil;
 import com.tian.app.daydaystudy.view.PullBackLayout;
+import com.tian.app.daydaystudy.widget.StatusBarCompat;
 
 import uk.co.senab.photoview.PhotoView;
 import uk.co.senab.photoview.PhotoViewAttacher;
@@ -29,6 +30,7 @@ public class PhotoViewActivity extends AppCompatActivity implements PullBackLayo
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photo_view);
+        StatusBarCompat.translucentStatusBar(this);
        photoView= (PhotoView) findViewById(R.id.photo_touch_iv);
         toolbar= (Toolbar) findViewById(R.id.toolbar);
         background= (RelativeLayout) findViewById(R.id.background);

@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.tian.app.daydaystudy.R;
 import com.tian.app.daydaystudy.adapter.DesginAdapter;
+import com.tian.app.daydaystudy.widget.StatusBarCompat;
 
 import org.xutils.view.annotation.ContentView;
 
@@ -22,6 +23,7 @@ public class OpenCloseActivity extends BaseActivity {
 
     @Override
     protected void init() {
+       StatusBarCompat.translucentStatusBar(this);
         mlistData=new ArrayList<String>();
         for (int i='A';i<'J';i++){
             mlistData.add("cardView"+(char)i);
